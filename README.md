@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# eventos18
+App Seminario 2018 DW3
+>>>>>>> a1a3bb6db6a3ecffdbb1fdb37e17c303c65ebc4f
