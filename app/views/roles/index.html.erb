@@ -1,0 +1,19 @@
+<h1>Roles#index</h1>
+
+<table class="table ">
+	  <thead class="thead-dark">
+	<tr><TH>Roles</TH><TH colspan="2">
+		<%= link_to 'Nuevo', roles_new_path %></TH></tr>
+</thead>
+	<tbody>
+	<% @roles.each do |f| %>
+	
+	<tr><TD><%= f.name %></TD>
+		
+		<TD><%= link_to 'Editar', roles_edit_path(f['id']) %></TD><TD>
+<%= link_to 'Borrar', roles_borrar_path(f['id']) %>
+		</TD>
+	</tr>
+    <% end %>
+    </tbody>
+</table>
