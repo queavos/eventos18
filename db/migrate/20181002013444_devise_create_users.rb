@@ -12,7 +12,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.datetime :reset_password_sent_at
       ## Rememberable
       t.datetime :remember_created_at
-      t.references :role, foreign_key: true
+      #t.references :role, foreign_key: true
       ## Trackable
       # t.integer  :sign_in_count, default: 0, null: false
       # t.datetime :current_sign_in_at
