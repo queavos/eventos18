@@ -58,10 +58,10 @@ ActiveRecord::Schema.define(version: 2018_10_11_001045) do
     t.string "idNumber"
     t.string "country"
     t.string "geren"
-    t.bigint "users_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_profiles_on_users_id"
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
   create_table "registereds", force: :cascade do |t|
@@ -111,7 +111,7 @@ ActiveRecord::Schema.define(version: 2018_10_11_001045) do
   add_foreign_key "conferences", "speakers"
   add_foreign_key "events", "users"
   add_foreign_key "news", "events"
-  add_foreign_key "profiles", "users", column: "users_id"
+  add_foreign_key "profiles", "users"
   add_foreign_key "registereds", "events"
   add_foreign_key "registereds", "users"
 end
