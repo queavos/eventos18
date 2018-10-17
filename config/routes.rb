@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  #rutas para eventos
+  get 'event/index'
+  get 'event/new'
+  post 'event/create'
+  get 'event/:id/edit', to: 'event#edit', as: 'event_edit'
+  patch 'event/:id/update', to: 'event#update', as: 'event_update'
+  delete 'event/:id/destroy', to: 'event#destroy', as: 'event_delete'
+  #rutas para roles
   get 'roles/index'
   get 'roles/new'
   post 'roles/create'
