@@ -13,7 +13,7 @@
 		<TD><%= f.status %></TD>
 		<TD><%= f.user.username %></TD>
 		<TD><%= link_to 'Editar', event_edit_path(f['id']) %></TD><TD>
-<%= link_to 'Borrar', event_borrar_path(f['id']) %>
+<%= link_to 'Borrar', { :action => :destroy, :id => f.id }, :method => :delete, :data => { :confirm => 'Desea borrar el registro?' } %>
 		</TD>
 	</tr>
     <% end %>

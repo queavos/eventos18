@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
+  #rutas para speaker
+  get 'speaker/index'
+  get 'speaker/new'
+  post 'speaker/create'
+  get 'speaker/:id/edit', to: 'speaker#edit', as: 'speaker_edit'
+  patch 'speaker/:id/edit', to: 'speaker#update', as: 'speaker_update'
+  delete 'speaker/:id', to: 'speaker#destroy', as: 'speaker_delete'
   #rutas para eventos
   get 'event/index'
   get 'event/new'
   post 'event/create'
   get 'event/:id/edit', to: 'event#edit', as: 'event_edit'
-  patch 'event/:id/update', to: 'event#update', as: 'event_update'
-  delete 'event/:id/destroy', to: 'event#destroy', as: 'event_delete'
+  patch 'event/:id/edit', to: 'event#update', as: 'event_update'
+  delete 'event/:id', to: 'event#destroy', as: 'event_delete'
   #rutas para roles
   get 'roles/index'
   get 'roles/new'

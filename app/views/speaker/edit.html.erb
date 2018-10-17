@@ -1,0 +1,5 @@
+<h1>Speaker#edit</h1>
+<%= form_for @speaker, :url => { :action => :edit } do |s| %>
+<%= s.hidden_field :id %>
+<%= render "form", s: s %>
+<% end %>

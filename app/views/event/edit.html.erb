@@ -1,5 +1,5 @@
 <h1>Event#edit</h1>
-<%= form_for @event, :url => { :action => :edit } do |p| %>
-<%= p.hidden_field :id %>
-<%= render "form", p: p %>
+<%= form_for @event, :url => { :action => :edit } do |e| %>
+<%= e.hidden_field :id %>
+<%= render "form", e: e %>
 <% end %>

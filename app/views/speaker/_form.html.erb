@@ -1,0 +1,39 @@
+<ul>
+<% 
+@speaker.errors.full_messages.each do |m|
+%>
+<li> <%= m %></li> 
+<% end %>
+</ul>
+
+<p>
+<%= s.label :lastName %> </br>
+<%= s.text_field :lastName %>
+</p>
+<p>
+<%= s.label :firstName %> </br>
+<%= s.text_field :firstName %>
+</p>
+<p>
+<%= s.label :resume %> </br>
+<%= s.text_area :resume %>
+</p>
+<p>
+<%= s.label :info %> </br>
+<%= s.text_area :info %>
+</p>
+<p>
+<%= s.label :photo %> </br>
+<%= s.text_area :photo %>
+</p>
+<p>
+<%= s.label :email %> </br>
+<%= s.text_field :email %>
+</p>
+<p>
+<%= s.label :phone %> </br>
+<%= s.text_field :phone %>
+</p>
+<p>
+<%= s.submit "Enviar" %>
+</p>
