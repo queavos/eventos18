@@ -1,0 +1,7 @@
+<div class="container-div">
+	<h1>Editar noticia</h1>
+	<%= form_for @new, :url => { :action => :update } do |e| %>
+	<%= e.hidden_field :id %>
+	<%= render "form", e: e %>
+	<% end %>
+</div>

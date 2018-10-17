@@ -12,10 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_10_16_005502) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "conferences", force: :cascade do |t|
+  create_table "conferences", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
     t.text "intro"
     t.date "date"
@@ -29,7 +26,7 @@ ActiveRecord::Schema.define(version: 2018_10_16_005502) do
     t.index ["speaker_id"], name: "index_conferences_on_speaker_id"
   end
 
-  create_table "events", force: :cascade do |t|
+  create_table "events", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.date "dateStart"
     t.date "dateEnd"
@@ -41,7 +38,7 @@ ActiveRecord::Schema.define(version: 2018_10_16_005502) do
     t.index ["user_id"], name: "index_events_on_user_id"
   end
 
-  create_table "news", force: :cascade do |t|
+  create_table "news", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.datetime "date"
@@ -51,7 +48,7 @@ ActiveRecord::Schema.define(version: 2018_10_16_005502) do
     t.index ["event_id"], name: "index_news_on_event_id"
   end
 
-  create_table "profiles", force: :cascade do |t|
+  create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "lastName"
     t.string "firstName"
     t.date "birthDate"
@@ -64,7 +61,7 @@ ActiveRecord::Schema.define(version: 2018_10_16_005502) do
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
-  create_table "registereds", force: :cascade do |t|
+  create_table "registereds", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.date "regDate"
     t.boolean "status"
     t.boolean "checked"
@@ -76,13 +73,13 @@ ActiveRecord::Schema.define(version: 2018_10_16_005502) do
     t.index ["user_id"], name: "index_registereds_on_user_id"
   end
 
-  create_table "roles", force: :cascade do |t|
+  create_table "roles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "speakers", force: :cascade do |t|
+  create_table "speakers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "lastName"
     t.string "firstName"
     t.text "resume"
@@ -95,7 +92,7 @@ ActiveRecord::Schema.define(version: 2018_10_16_005502) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"

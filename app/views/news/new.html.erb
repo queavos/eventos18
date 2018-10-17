@@ -1,0 +1,6 @@
+<div class="container-div">
+	<h1>Nueva noticia</h1>
+	<%= form_for @new, :url => { :action => :create } do |e| %>
+	<%= render "form", e: e %>
+	<% end %>
+</div>
