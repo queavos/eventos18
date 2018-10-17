@@ -21,7 +21,7 @@
 </p>
 <p>
 <%= e.label :event_id %> </br>
-<%= e.text_field :event_id, class: 'form-control'%>
+<%= e.collection_select(:event_id, Event.all, :id, :name)  %>
 </p>
 <p>
 <%= e.submit "Crear", class: 'btn btn-primary' %>
