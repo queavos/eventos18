@@ -9,11 +9,11 @@
 
 <p>
 <%= e.label :user_id %> </br>
-<%= e.collection_select(:user_id, User.all, :id, :username)  %>
+<%= e.collection_select(:user_id, User.all, :id, :email)  %>
 </p>
 <p>
 <%= e.label :name %> </br>
-<%= e.text_field :name %>
+<%= e.text_field :name, class: 'form-control'%>
 </p>
 <p>
 <%= e.label :dateStart %> </br>
@@ -25,12 +25,12 @@
 </p>
 <p>
 <%= e.label :description %> </br>
-<%= e.text_area :description %>
+<%= e.text_area :description,  class: 'form-control' %>
 </p>
 <p>
-<%= e.label :status %> </br>
+<%= e.label :status %>
 <%= e.check_box :status %>
 </p>
 <p>
-<%= e.submit "Enviar" %>
+<%= e.submit "Crear", class: 'btn btn-primary' %>
 </p>

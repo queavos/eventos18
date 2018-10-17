@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-size: 17px;
+	font-family: 'Roboto Condensed', sans-serif !important;
+
+}
+
+.container-div{
+	margin: 15%;
+	margin-bottom: 0px;
+	margin-top: 2%;
+	font-size: 18px;
+}
+
+
+.container-form{
+	margin: 35%;
+	margin-bottom: 0px;
+	margin-top: 6%;
+	font-size: 18px;
+}
+
+.alerts-div{
+	margin: 15%;
+	margin-top: 1%;
+	margin-bottom: 0px;
+}
+
+
+.be-red{
+	background-color: #0B273B;
+	color: white;
+}
+
+.no-margin {
+	margin-bottom: 20px !important;
+	margin-top: 20px !important;
+}
+
+a, a:visited{
+	color: inherit;
+	text-decoration: none !important;
+	margin-top: 2px;
+}
+
+li {
+	font-size: 18px;
+}
+
+
+.row{
+	margin: 0px;
+}
+
+.white{
+	color: white;
+}
+
+.page-container{
+	background-color: transparent;
+    height: 100%; 
+    height: auto !important;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+footer{
+	font-size: 14px;
+	background-color: #11232B;
+	bottom: 0 !important;
+	color: #fff;
+	height: 50px;
+    position: absolute;
+	width: 100%;
+	padding: 20px;
+}
+
+/* Estilos para dispositivos */
+@media (min-width: 920px) and (max-width: 1199px) {
+
+}
+
+/*Mayores*/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+
+/*Medianos*/
+@media (min-width: 468px) and (max-width: 767px) {
+
+}
+
+/*Pequeños*/
+@media (max-width: 468px){
+
+}

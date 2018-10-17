@@ -20,6 +20,13 @@ Rails.application.routes.draw do
   get 'roles/:id/edit', to: 'roles#edit', as: 'roles_edit'
   patch 'roles/:id/update',  to: 'roles#update', as: 'roles_update'
   delete 'roles/:id/destroy',to: 'roles#destroy', as: 'roles_delete'
+  #rutas para noticias
+  get 'news/index'
+  get 'news/new'
+  post 'news/create'
+  get 'news/:id/edit', to: 'news#edit', as: 'news_edit'
+  patch 'news/:id/update',  to: 'news#update', as: 'news_update'
+  delete 'news/:id/destroy',to: 'news#destroy', as: 'news_delete'
   
 
   devise_for :users

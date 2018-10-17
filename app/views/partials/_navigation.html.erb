@@ -1,0 +1,35 @@
+<header>
+  <nav class="be-red white large-padding">
+    <ul class="no-list row center-xs middle-xs">
+      <li class="col-md">
+          <h3 class="no-margin"><%= link_to "Eventos", root_path %></h3>
+      </li>
+      <li class="col-md">
+          <%= link_to "Próximos eventos", event_index_path %>
+      </li>
+      <li class="col-md">
+        <%= link_to "Noticias", news_index_path %>
+      </li>
+      <% if user_signed_in? %>
+        <li class="col-md">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <%= current_user.email %>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><%= link_to "Perfil", user_session_path%></li>
+            <li role="separator" class="divider"></li>
+            <li class="col-md">
+              <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <%else%>
+        <li class="col-md">
+            <%= link_to "Inicia sesión", new_user_session_path %>  o  <%= link_to "Registrate", new_user_registration_path %>
+        </li>
+      <%end%>
+    </ul>
+  </nav>
+</header>

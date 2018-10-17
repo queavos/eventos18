@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Eventsapp</title>
+    <title>Eventosapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <ul>
-      <% if !user_signed_in? %>
-
-      <li> <%= link_to 'Entrar', new_user_session_path %> </li>
-        <% else %>
-      <li> <%= link_to 'sALIR', destroy_user_session_path, method: :delete %> </li>
-      <% end %>
-    </ul>
-    <div>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-    </div>
-    <%= yield %>
+      <div class="page-container">
+        <%= render "partials/navigation" %>
+         <div class="alerts-div">
+          <% unless notice.nil? %>
+            <div class="alert alert-success" role="alert">
+              <p class="notice"><%= notice %></p>
+            </div>
+          <%end%>
+          <% unless alert.nil? %>
+            <div class="alert alert-warning" role="alert">
+              <p class="alert"><%= alert %></p>
+            </div>
+          <%end%>
+        </div>
+        <%= yield %>
+      </div>
+      <%= render "partials/footer" %>
   </body>
 </html>

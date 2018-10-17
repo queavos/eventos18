@@ -1,4 +1,6 @@
-<h1>Event#new</h1>
-<%= form_for @event, :url => { :action => :create } do |e| %>
-<%= render "form", e: e %>
-<% end %>
+<div class="container-div">
+	<h1>Nuevo evento</h1>
+	<%= form_for @event, :url => { :action => :create } do |e| %>
+	<%= render "form", e: e %>
+	<% end %>
+</div>

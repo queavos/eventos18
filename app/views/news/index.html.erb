@@ -1,0 +1,21 @@
+<div class="container-div">
+<h1>Noticias</h1>
+<table class="table ">
+	  <thead class="thead-light">
+	<tr><TH>Titulo</TH><TH>Contenido</TH><TH>Fecha</TH><TH>Evento</TH><TH colspan="2"><%= link_to 'Nuevo', news_new_path %></TH></tr>
+</thead>
+	<tbody>
+	<% @news.each do |f| %>
+	
+	<tr><TD><%= f.title %></TD>
+		<TD><%= f.body %></TD>
+		<TD><%= f.date %></TD>
+		<TD><%= f.event_id %></TD>
+		<TD><%= link_to 'Editar', news_edit_path(f['id']) %></TD><TD>
+		<%= link_to 'Eliminar', news_delete_path(f['id']), method: :delete, data: { confirm: 'Estas seguro?' } %>
+		</TD>
+	</tr>
+    <% end %>
+    </tbody>
+</table>
+</div>

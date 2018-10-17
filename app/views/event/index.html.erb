@@ -1,6 +1,7 @@
-<h1>Event#index</h1>
+<div class="container-div">
+<h1>Eventos</h1>
 <table class="table ">
-	  <thead class="thead-dark">
+	  <thead class="thead-light">
 	<tr><TH>Evento</TH><TH>Fecha inicio</TH><TH>Fecha fin</TH><TH>Descripcion</TH><TH>Estado</TH><TH>Encargado</TH><TH colspan="2"><%= link_to 'Nuevo', event_new_path %></TH></tr>
 </thead>
 	<tbody>
@@ -11,11 +12,13 @@
 		<TD><%= f.dateEnd %></TD>
 		<TD><%= f.description %></TD>
 		<TD><%= f.status %></TD>
-		<TD><%= f.user.username %></TD>
+		<TD><%= f.user_id %></TD>
 		<TD><%= link_to 'Editar', event_edit_path(f['id']) %></TD><TD>
+
 <%= link_to 'Borrar', { :action => :destroy, :id => f.id }, :method => :delete, :data => { :confirm => 'Desea borrar el registro?' } %>
 		</TD>
 	</tr>
     <% end %>
     </tbody>
 </table>
+</div>
