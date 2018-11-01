@@ -1,4 +1,5 @@
 class NewsController < ApplicationController
+before_action :authenticate_user!, except: :new
   def index
     @news = New.all
   end
@@ -15,10 +16,10 @@ class NewsController < ApplicationController
     @new.event_id=params[:new][:event_id]
 
 
-    if @new.save 
+    if @new.save
       redirect_to  news_index_path
-    else 
-      render "new"  
+    else
+      render "new"
     end
   end
 
@@ -36,10 +37,10 @@ class NewsController < ApplicationController
     @new.event_id=params[:new][:event_id]
 
 
-    if @new.save 
+    if @new.save
       redirect_to  news_index_path
-    else 
-      render "new"  
+    else
+      render "new"
     end
   end
 
