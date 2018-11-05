@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: '1'
+  name: IV Simposio de Innovación
+  dateStart: '2018-11-05'
+  dateEnd: '2018-11-05'
+  description: Tecnología, Arte, Posters
+  status: '1'
+  user_id: '1'
+
+two:
+  id: '2'
+  name: Seminario Tecnológico de Vanguardia
+  dateStart: '2018-11-05'
+  dateEnd: '2018-11-05'
+  description: Evento organizado por estudiantes del 4 año de la carrera de Lic. en Análisis de Sistemas Informáticos
+  status: '1'
+  user_id: '2'

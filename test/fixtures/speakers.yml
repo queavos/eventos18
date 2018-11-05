@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: '1'
+  lastName: Mendoza
+  firstName: Pedro
+  resume: Es un empresario de Internet estadounidense, cofundador y promotor.
+  info: Promotor de una enciclopedia basada en el concepto wiki y el modelo de software libre. Fue fundador también de Nupedia, antecesora de Wikipedia, y junto con Tim Shell de la compañía Bomis. También fue cofundador de la empresa con fines de lucro Wikia, junto con Angela Beesley. Se graduó en las universidades de Auburn y Alabama.
+  photo: photo.png
+  email: pedrom12@gmail.com
+  country: Paraguay
+  phone: 0983422333
+
+two:
+  id: '2'
+  lastName: Fernandez
+  firstName: Carolina
+  resume: Es una empresario de Internet estadounidense, cofundadora y promotora.
+  info: Promotora de una enciclopedia basada en el concepto wiki y el modelo de software libre. Fue fundadora también de Nupedia, antecesora de Wikipedia, y junto con Tim Shell de la compañía Bomis. También fue cofundadora de la empresa con fines de lucro Wikia, junto con Angela Beesley. Se graduó en las universidades de Auburn y Alabama.
+  photo: photo.png
+  email: caroso13@gmail.com
+  country: Paraguay
+  phone: 0985621232
