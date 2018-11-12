@@ -1,5 +1,5 @@
 class NewsController < ApplicationController
-before_action :authenticate_user!, except: :new
+#before_action :authenticate_user!, only: [  :destroy]
   def index
     @news = New.all
   end
@@ -29,7 +29,7 @@ before_action :authenticate_user!, except: :new
   end
 
   def update
-    id=params[:id]
+    id=params[:new][:id]
     @new=New.find(id)
     @new.title=params[:new][:title]
     @new.body=params[:new][:body]
