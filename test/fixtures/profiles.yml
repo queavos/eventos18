@@ -4,7 +4,7 @@ one:
   id: '1'
   lastName: López
   firstName: Berta
-  birthDate: 2018-11-05
+  birthDate: '2018-11-05'
   idNumber: '4542443'
   country: Argentina
   geren: F
@@ -14,7 +14,7 @@ two:
   id: '2'
   lastName: Miguel
   firstName: Luis
-  birthDate: 2018-11-05
+  birthDate: '2018-11-05'
   idNumber: '3786342'
   country: Paraguay
   geren: M

@@ -2,7 +2,7 @@
 
 one:
   id: '1'
-  regDate: 2018-11-05
+  regDate: '2018-11-05'
   status: '1'
   checked: '1'
   user_id: '1'
@@ -10,7 +10,7 @@ one:
 
 two:
   id: '2'
-  regDate: 2018-11-05
+  regDate: '2018-11-05'
   status: '1'
   checked: '1'
   user_id: '2'
