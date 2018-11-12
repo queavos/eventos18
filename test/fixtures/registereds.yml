@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: '1'
+  regDate: 2018-11-05
+  status: '1'
+  checked: '1'
+  user_id: '1'
+  event_id: '1'
+
+two:
+  id: '2'
+  regDate: 2018-11-05
+  status: '1'
+  checked: '1'
+  user_id: '2'
+  event_id: '2'
