@@ -8,8 +8,8 @@
 	<% @events.each do |f| %>
 	
 	<tr><TD><%= f.name %></TD>
-		<TD><%= f.dateStart %></TD>
-		<TD><%= f.dateEnd %></TD>
+		<TD><%= f.dateStart.strftime("%Y/%m/%d") %></TD>
+		<TD><%= f.dateEnd.strftime("%Y/%m/%d") %></TD>
 		<TD><%= f.description %></TD>
 		<TD><%= f.status %></TD>
 		<TD><%= f.user_id %></TD>
