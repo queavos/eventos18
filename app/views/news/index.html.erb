@@ -9,7 +9,7 @@
 
 	<tr><TD><%= f.title %></TD>
 		<TD><%= f.body %></TD>
-		<TD><%= f.date %></TD>
+		<TD><%= f.date.strftime("%Y/%m/%d") %></TD>
 		<TD><%= f.event_id %></TD>
 
 		<TD>
