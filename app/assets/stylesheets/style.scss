@@ -59,7 +59,7 @@ li {
 
 .page-container{
 	background-color: transparent;
-    height: 100%; 
+    height: 100%;
     height: auto !important;
     min-height: 100%;
     position: relative;
@@ -69,7 +69,7 @@ li {
 footer{
 	font-size: 14px;
 	background-color: #11232B;
-	bottom: 0 !important;
+//	bottom: 0 !important;
 	color: #fff;
 	height: 50px;
     position: absolute;
@@ -84,7 +84,7 @@ footer{
 
 /*Mayores*/
 @media (min-width: 768px) and (max-width: 991px) {
-	
+
 }
 
 
