@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   patch 'news/:id/update',  to: 'news#update', as: 'news_update'
   delete 'news/:id/destroy',to: 'news#destroy', as: 'news_delete'
   
+  resources :profiles
 
   devise_for :users
   get 'home/index'

@@ -17,7 +17,7 @@
             <%= current_user.email %>
           </button>
           <ul class="#dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><%= link_to "Perfil", user_session_path%></li>
+            <li><%= link_to "Perfil", profile_path(current_user.id)%></li>
             <li role="separator" class="divider"></li>
             <li class="col-md">
               <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
