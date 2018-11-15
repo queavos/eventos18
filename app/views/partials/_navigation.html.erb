@@ -5,10 +5,16 @@
           <h3 class="no-margin"><%= link_to "Eventos", root_path %></h3>
       </li>
       <li class="col-md">
-          <%= link_to "Próximos eventos", event_index_path %>
+          <%= link_to " Eventos", event_index_path %>
       </li>
       <li class="col-md">
         <%= link_to "Noticias", news_index_path %>
+      </li>
+      <li class="col-md">
+        <%= link_to "Conferencistas", speaker_index_path %>
+      </li>
+      <li class="col-md">
+        <%= link_to "Roles", roles_index_path %>
       </li>
       <% if user_signed_in? %>
         <li class="col-md">
