@@ -7,11 +7,11 @@
 </thead>
 	<tbody>
 	<% @roles.each do |f| %>
-	
+
 	<tr><TD><%= f.name %></TD>
-		
+
 		<TD><%= link_to 'Editar', roles_edit_path(f['id']) %></TD><TD>
-<%= link_to 'Borrar', roles_borrar_path(f['id']) %>
+<%= link_to 'Borrar', roles_delete_path(f['id']) %>
 		</TD>
 	</tr>
     <% end %>

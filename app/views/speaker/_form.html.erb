@@ -1,8 +1,8 @@
 <ul>
-<% 
+<%
 @speaker.errors.full_messages.each do |m|
 %>
-<li> <%= m %></li> 
+<li> <%= m %></li>
 <% end %>
 </ul>
 
@@ -41,3 +41,10 @@
 <p>
 <%= s.submit "Enviar" %>
 </p>
+<script>
+$(document).ready(function(){
+//  alert(2);
+ $('input').addClass('form-control');
+  $('textarea').addClass('form-control');
+});
+</script>
