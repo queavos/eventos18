@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   delete 'news/:id/destroy',to: 'news#destroy', as: 'news_delete'
   
   resources :profiles
+  resources :conferences
 
   devise_for :users
   get 'home/index'

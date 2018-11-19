@@ -1,0 +1,52 @@
+<%= form_with(model: conference, local: true) do |form| %>
+  <% if conference.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(conference.errors.count, "error") %> prohibited this conference from being saved:</h2>
+
+      <ul>
+      <% conference.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :intro %>
+    <%= form.text_field :intro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.time_select :time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :place %>
+    <%= form.text_field :place %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_id %>
+    <%= form.text_field :event_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :speaker_id %>
+    <%= form.text_field :speaker_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
