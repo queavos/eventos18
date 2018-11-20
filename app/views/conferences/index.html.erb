@@ -2,8 +2,8 @@
 
 <h1>Conferences</h1>
 
-<table>
-  <thead>
+<table class="table ">
+  <thead class="thead-light">
     <tr>
       <th>Title</th>
       <th>Intro</th>
@@ -21,8 +21,8 @@
       <tr>
         <td><%= conference.title %></td>
         <td><%= conference.intro %></td>
-        <td><%= conference.date %></td>
-        <td><%= conference.time %></td>
+        <td><%= conference.date.strftime("%Y/%m/%d") %></td>
+        <td><%= conference.time.strftime("%I:%M%p")%></td>
         <td><%= conference.place %></td>
         <td><%= conference.event_id %></td>
         <td><%= conference.speaker_id %></td>
