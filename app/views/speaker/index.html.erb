@@ -2,7 +2,7 @@
 <p>Find me in app/views/speaker/index.html.erb</p>
 <table class="table ">
 	  <thead class="thead-dark">
-	<tr><TH>ID</TH><TH>Apellidos</TH><TH>Nombres</TH><TH>Resume</TH><TH>Info</TH><TH>Foto</TH><TH>Correo</TH><TH>Pais</TH><TH>Telefono</TH><TH colspan="2"><%= link_to 'Nuevo', speaker_new_path %></TH></tr>
+	<tr><TH>ID</TH><TH>Apellidos</TH><TH>Nombres</TH></TH><TH>Foto</TH><TH>Correo</TH><TH>Pais</TH><TH>Telefono</TH><TH colspan="2"><%= link_to 'Nuevo', speaker_new_path %></TH></tr>
 </thead>
 	<tbody>
 	<% @speakers.each do |f| %>
@@ -10,8 +10,7 @@
 	<tr><TD><%= f.id %></TD>
 		<TD><%= f.lastName %></TD>
 		<TD><%= f.firstName %></TD>
-		<TD><%= f.resume %></TD>
-		<TD><%= f.info %></TD>
+		
 		<TD><%= f.photo %></TD>
 		<TD><%= f.email %></TD>
 		<TD><%= f.country %></TD>
