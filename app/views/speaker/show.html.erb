@@ -1,0 +1,48 @@
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @speaker.lastName %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @speaker.firstName %>
+</p>
+
+
+<p>
+  <strong>Resume:</strong>
+  <%= @speaker.resume %>
+</p>
+
+
+<p>
+  <strong>Info:</strong>
+  <%= @speaker.info %>
+</p>
+
+
+<p>
+  <strong>Photo:</strong>
+  <%= @speaker.photo %>
+</p>
+
+
+<p>
+  <strong>Email:</strong>
+  <%= @speaker.email %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @speaker.country %>
+</p>
+
+
+<p>
+  <strong>Phone:</strong>
+  <%= @speaker.phone %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@speaker) %> |
+<%= link_to 'Back', speaker_index_path %>

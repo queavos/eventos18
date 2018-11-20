@@ -6,6 +6,10 @@ class SpeakerController < ApplicationController
   def new
     @speaker= Speaker.new
   end
+   def show
+    id=params[:id]
+    @speaker= Speaker.find(id)
+  end
 
   def create
     @speaker= Speaker.new

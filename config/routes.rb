@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   #rutas para speaker
   get 'speaker/index'
+  get 'speaker/:id/show', to: 'speaker#show', as: 'speaker_show'
   get 'speaker/new'
   post 'speaker/create'
   get 'speaker/:id/edit', to: 'speaker#edit', as: 'speaker_edit'
