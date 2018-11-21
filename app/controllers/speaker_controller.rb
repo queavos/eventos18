@@ -23,6 +23,7 @@ class SpeakerController < ApplicationController
     @speaker.phone=params[:speaker][:phone]
     if @speaker.save 
       redirect_to  speaker_index_path
+      
     else 
       render "new"  
   end

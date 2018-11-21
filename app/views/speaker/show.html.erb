@@ -24,7 +24,7 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= image_tag @speaker.photo.medium.url %>
+  <%= image_tag @speaker.photo.medium.url , size: "250x250"  %>
 </p>
 
 
@@ -44,5 +44,5 @@
   <%= @speaker.phone %>
 </p>
 
-<%= link_to 'Edit', edit_profile_path(@speaker) %> |
+<%= link_to 'Edit', speaker_edit_path(@speaker) %> |
 <%= link_to 'Back', speaker_index_path %>
