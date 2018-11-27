@@ -24,9 +24,9 @@
         <td><%= profile.country %></td>
         <td><%= profile.geren %></td>
 
-        <td><%= link_to 'Show', profile, :class => 'btn btn-secondary ' %></td>
-        <td><%= link_to 'Edit', edit_profile_path(profile),  :class => 'btn btn-warning' %></td>
-        <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } , :class => 'btn btn-danger' %></td>
+        <td><%= link_to 'Ver', profile, :class => 'btn btn-secondary ' %></td>
+        <td><%= link_to 'Editar', edit_profile_path(profile),  :class => 'btn btn-warning' %></td>
+        <td><%= link_to 'Eliminar', profile, method: :delete, data: { confirm: '¿Esta seguro?' } , :class => 'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Profile', new_profile_path, :class => 'btn btn-success' %>
+<%= link_to 'Nuevo perfil', new_profile_path, :class => 'btn btn-success' %>

@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Conferences</h1>
+<h1>Conferencias</h1>
 
 <table class="table ">
   <thead class="thead-light">
@@ -26,9 +25,9 @@
         <td><%= conference.place %></td>
         <td><%= conference.event_id %></td>
         <td><%= conference.speaker_id %></td>
-        <td><%= link_to 'Show', conference %></td>
-        <td><%= link_to 'Edit', edit_conference_path(conference) %></td>
-        <td><%= link_to 'Destroy', conference, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver más', conference %></td>
+        <td><%= link_to 'Editar', edit_conference_path(conference) %></td>
+        <td><%= link_to 'Eliminar', conference, method: :delete, data: { confirm: '¿Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +35,4 @@
 
 <br>
 
-<%= link_to 'New Conference', new_conference_path %>
+<%= link_to 'Nueva conferencia', new_conference_path %>
