@@ -1,0 +1,42 @@
+<%= form_with(model: registered, local: true) do |form| %>
+  <% if registered.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(registered.errors.count, "error") %> prohibited this registered from being saved:</h2>
+
+      <ul>
+      <% registered.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :regDate %>
+    <%= form.text_field :regDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :checked %>
+    <%= form.text_field :checked %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_id %>
+    <%= form.text_field :event_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

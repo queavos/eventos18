@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Regdate:</strong>
+  <%= @registered.regDate %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @registered.status %>
+</p>
+
+<p>
+  <strong>Checked:</strong>
+  <%= @registered.checked %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @registered.user_id %>
+</p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @registered.event_id %>
+</p>
+
+<%= link_to 'Edit', edit_registered_path(@registered) %> |
+<%= link_to 'Back', registereds_path %>

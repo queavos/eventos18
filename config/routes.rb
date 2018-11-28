@@ -31,7 +31,7 @@ Rails.application.routes.draw do
   
   resources :profiles
   resources :conferences
-
+  resources :registereds
   devise_for :users
   get 'home/index'
   root 'home#index'
