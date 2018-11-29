@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<% wicked_pdf_stylesheet_link_tag "pdf" %>
+</head>
+<body>
+	<h3>El presente certificado es otorgado a:</h3>
+	<%= @registered.user.profile.firstName%>
+	<%= @registered.user.profile.lastName%><br><br>
+	<p>Por haber participado en el "<%=@registered.event.name%>" edicion <%=@registered.event.dateEnd.strftime("%Y")%>, realizado en la Universidad Autónoma de Encarnación (UNAE).</p>
+	<p>Encarnación, <%=  @registered.event.dateEnd.strftime("%A %d de %B del %Y")%></p>
+</body>
+</html>

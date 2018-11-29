@@ -3,6 +3,7 @@ class RegisteredsController < ApplicationController
 
   # GET /registereds
   # GET /registereds.json
+  
   def index
     @registereds = Registered.all
   end
@@ -10,6 +11,14 @@ class RegisteredsController < ApplicationController
   # GET /registereds/1
   # GET /registereds/1.json
   def show
+    @registered= Registered.find(params[:id])
+    respond_to do |format|
+      format.pdf do 
+        render pdf:         'show',
+               orientation: 'Landscape',
+               page_size:   'A5'
+      end
+    end  
   end
 
   # GET /registereds/new
